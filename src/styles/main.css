@@ -1,0 +1,100 @@
+.Main{
+    position: fixed;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 80%;
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+
+.Main--Content{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.Main--Content h4{
+    font-size: 2.2rem;
+    color: #fff;
+    margin-bottom: 1.9rem;
+    font-weight: 700;
+}
+
+.Main--Content p{
+    width: 75%;
+    color: #fff;
+    font-weight: 50;
+    text-align: center;
+}
+
+.Main--Categories{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.Main--Categories--content{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Main--Categories--content a{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-weight: 750;
+}
+
+.Main--Categories--icon{
+    width: 100px;
+    height: 100px;
+    background: white;
+    border: 5px solid #020024;
+    margin-right: 0.5em;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Main--Categories--icon:hover{
+    width: 140px;
+    height: 140px;
+    cursor: pointer;
+}
+
+#DataScience .Main--Categories--icon:hover{
+    background: rgb(83, 185, 67);
+    box-shadow: 0px 3px 5px 4px rgba(0, 0, 0, 0.5);
+}
+
+#Backend .Main--Categories--icon:hover{
+    background: rgb(75, 118, 234);
+    box-shadow: 0px 3px 5px 4px rgba(0, 0, 0, 0.5);
+}
+
+#Frontend .Main--Categories--icon:hover{
+    background: rgb(234, 75, 75);
+    box-shadow: 0px 3px 5px 4px rgba(0, 0, 0, 0.5);
+}
+
+#Fullstack .Main--Categories--icon:hover{
+    background: rgb(238, 250, 87);
+    box-shadow: 0px 3px 5px 4px rgba(0, 0, 0, 0.5);
+}
+
+.Main--Categories--icon img{
+    width: 55%;
+}
